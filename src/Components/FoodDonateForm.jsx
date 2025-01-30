@@ -37,7 +37,7 @@ const FoodDonateForm = () => {
     };
 
     try {  
-      const response = await axios.post(" https://https://food-donation-2-6lkl.onrender.com/donations", donationData);
+      const response = await axios.post(" https://food-donation-3-322o.onrender.com/donations", donationData);
       if (response.status === 200) {
         setShowPopup(true);
         setItems([{ itemName: "", quantity: "" }]);

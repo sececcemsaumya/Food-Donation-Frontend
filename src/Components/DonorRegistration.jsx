@@ -26,7 +26,7 @@ const DonorRegistration = () => {
 
     try {  
    
-      const response = await axios.post(" https://https://food-donation-2-6lkl.onrender.com/donorsignup", {
+      const response = await axios.post(" https://food-donation-3-322o.onrender.com/donorsignup", {
         name,
         email,
         password

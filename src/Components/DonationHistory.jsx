@@ -17,7 +17,7 @@ const DonationHistory = () => {
       
       try {  
         setLoading(true);
-        const response = await axios.get(` https://https://food-donation-2-6lkl.onrender.com/donations/${contact}`);
+        const response = await axios.get(`https://food-donation-3-322o.onrender.com/${contact}`);
         setDonationHistory(response.data);
       } catch (error) {
         console.error("Error fetching donation history:", error);
@@ -48,7 +48,7 @@ const DonationHistory = () => {
     if (!contact) return;
 
     try {
-      await axios.delete(` https://food-donation-2-6lkl.onrender.com/donations/${contact}`);
+      await axios.delete(` https://food-donation-3-322o.onrender.com/donations/${contact}`);
       setDonationHistory([]);
       alert("Your donation history has been cleared.");
     } catch (error) {
