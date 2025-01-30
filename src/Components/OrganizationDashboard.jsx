@@ -9,7 +9,7 @@ const OrganizationDashboard = () => {
   const [selectedContact, setSelectedContact] = useState(null);
 
   useEffect(() => {   
-    axios.get("food-donation-2-6lkl.onrender.com/donations")
+    axios.get("https://food-donation-2-6lkl.onrender.com/donations")
       .then(response => {
         setDonationHistory(response.data);
         setFilteredDonations(response.data); 

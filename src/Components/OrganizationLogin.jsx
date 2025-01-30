@@ -19,7 +19,7 @@ const OrganizationLogin = () => {
 
     try {  
       
-      const response = await axios.post("food-donation-2-6lkl.onrender.com/orglogin", {
+      const response = await axios.post("https://food-donation-2-6lkl.onrender.com/orglogin", {
         name,
         email,
         password,

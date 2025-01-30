@@ -33,7 +33,7 @@ const OrgRegistration = () => {
 
     try {   
       
-      const response = await axios.post("food-donation-2-6lkl.onrender.com/orgsignup", formData);
+      const response = await axios.post("https://food-donation-2-6lkl.onrender.com/orgsignup", formData);
       if (response.status === 200){
       alert("Registration successful!");
      
