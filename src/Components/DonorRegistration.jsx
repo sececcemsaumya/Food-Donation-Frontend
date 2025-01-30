@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
+import { Link } from 'react-router';
 import axios from 'axios';  //http://localhost:3000/donorsignup
 
 const DonorRegistration = () => {
@@ -26,9 +27,10 @@ const DonorRegistration = () => {
 
     try {  
    
-      const response = await axios.post(" https://food-donation-3-322o.onrender.com/donorsignup", {
+      const response = await axios.post("https://food-donation-3-322o.onrender.com/donorsignup", {
         name,
         email,
+        phoneNumber,
         password
       });
 
@@ -112,7 +114,7 @@ const DonorRegistration = () => {
           <button type="submit" className="submit-button">Register</button>
         </form>
         <p className="login-text">
-          Already have an account? <a href="/signin" className="login-link">Login</a>
+          Already have an account? <Link to="/signin" className="login-link">Login</Link>
         </p>
       </div>
     </div>

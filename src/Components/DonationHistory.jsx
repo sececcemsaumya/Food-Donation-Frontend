@@ -17,7 +17,7 @@ const DonationHistory = () => {
       
       try {  
         setLoading(true);
-        const response = await axios.get(`https://food-donation-3-322o.onrender.com/${contact}`);
+        const response = await axios.get(`https://food-donation-3-322o.onrender.com/donations/${contact}`);
         setDonationHistory(response.data);
       } catch (error) {
         console.error("Error fetching donation history:", error);

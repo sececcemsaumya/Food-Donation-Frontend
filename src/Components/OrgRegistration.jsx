@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router";
 import { useState } from "react";
-import axios from "axios";  //http://localhost:3000/orgsignup
+import axios from "axios"; 
+import { Link } from "react-router"; //http://localhost:3000/orgsignup
 
 const OrgRegistration = () => {
   const navigate = useNavigate();
@@ -133,9 +134,9 @@ const OrgRegistration = () => {
 
         <p className="login-text">
           Already have an account?{" "}
-          <a href="/orglogin" className="login-link">
+          <Link to="/orglogin" className="login-link">
             Login
-          </a>
+          </Link>
         </p>
       </div>
     </div>

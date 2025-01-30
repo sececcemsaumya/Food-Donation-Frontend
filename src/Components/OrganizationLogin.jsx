@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
+import { Link } from "react-router";
 import axios from "axios";  //http://localhost:3000/orglogin
 
 const OrganizationLogin = () => {
@@ -85,7 +86,7 @@ const OrganizationLogin = () => {
           {errorMessage && <p className="error-message">{errorMessage}</p>}
         </form>
         <p className="login-text">
-          New here? <a href="/orgreg" className="login-link">Register as an Organization</a>
+          New here? <Link to="/orgreg" className="login-link">Register as an Organization</Link>
         </p>
       </div>
     </div>

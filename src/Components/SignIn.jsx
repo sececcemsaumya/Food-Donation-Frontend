@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 import axios from "axios";  //http://localhost:3000/donorlogin
 
 const SignIn = () => {
@@ -71,7 +71,7 @@ const SignIn = () => {
             </button>
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <p>
-              New here? <a href="/donreg">Register as a Donor</a>
+              New here? <Link to="/donreg">Register as a Donor</Link>
             </p>
           </form>
         </div>
